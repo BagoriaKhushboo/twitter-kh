@@ -1,0 +1,3 @@
+npm create-react-app tweeter   ->bring the package and install
+npx create-react-app tweeter   -> execute package does't occupied space in application
+npm start -->start react project
