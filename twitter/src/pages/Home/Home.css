@@ -1,0 +1,15 @@
+.home{
+    display: flex;
+    height: 100vh;
+}
+.leftContainer{
+width: 25%;
+}
+.centerContainer{
+width: 45%;
+border-left: 1px solid lightgray;
+border-right: 1px solid lightgray;
+}
+.rightContainer{
+width: 30%;
+}
