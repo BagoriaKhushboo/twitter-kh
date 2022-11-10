@@ -1,0 +1,85 @@
+.rightcontent{
+    border: 1px solid rgb(239, 243, 244);
+    padding: 16px;
+    border-radius: 17px;
+
+}
+.rightcontent h3{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+.rightcontent p{
+    color: rgb(83, 100, 113);
+    font-size: 13px;
+
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dadce0;;
+    border-radius: 19px;
+    font-size: 14px;
+    color: #3c4043;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+.social:hover{
+    background-color: lightgray;
+}
+
+.social a{
+    text-decoration: none;
+
+}
+.social span{
+    color: #3c4043;
+}
+.gfont{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+.fc{
+    font-size: 15px;
+    font-weight: 800;
+}
+.social-m{
+    margin-right: 7px;
+    font-size: 15px;
+}
+.bi-apple {
+    color: black;
+}
+.privacy-content{
+    font-size: 13px;
+    font-family: sans-serif;
+    color: rgb(83, 100, 113);
+}
+.privacy-content a{
+    color: rgb(29, 155, 240);
+    text-decoration: none;
+}
+.privacy-content a:hover{
+    text-decoration: underline;
+}
+.extra-links{
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 16px;
+    padding-left: 16px;
+    font-family: sans-serif;
+}
+.extra-links a{
+    text-decoration: none;
+    color: rgb(83, 100, 113);
+    margin-right: 5px;
+}
+.extra-links a:hover{
+    text-decoration: underline;
+}
+.extra-links span{
+    display: block;
+    color: rgb(83, 100, 113);
+}

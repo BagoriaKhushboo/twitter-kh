@@ -1,15 +1,16 @@
 .home{
     display: flex;
     height: 100vh;
+    margin-top:5px;
 }
 .leftContainer{
 width: 25%;
 }
 .centerContainer{
-width: 45%;
-border-left: 1px solid lightgray;
-border-right: 1px solid lightgray;
+width: 41%;
+border-left: 1px solid rgb(239, 243, 244);
+border-right: 1px solid rgb(239, 243, 244);
 }
 .rightContainer{
-width: 30%;
+width: 34%;
 }

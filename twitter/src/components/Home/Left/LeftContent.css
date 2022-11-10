@@ -1,0 +1,54 @@
+.tw{
+    color: rgb(29, 155, 240);
+    font-size: 32px;
+}
+.logo{
+    padding-left: 3px;
+}
+.logo a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.logo:hover a{
+    background-color:rgb(228, 240, 243);
+    border-radius: 50%;
+    
+}
+.info-in{
+    padding: 12px;
+}
+.ex-icon{
+    color: rgb(15, 20, 25);
+    font-size: 28px;
+}
+.fwex-span{
+    font-weight: 700;
+}
+.fwset-span{
+    font-weight: 400;
+}
+
+.info span{
+    font-size: 20px;
+  
+    color: rgba(0,0,0,1.00);
+    margin: 0 20px;
+}
+
+.info a{
+    display: block;
+    text-decoration: none;
+ 
+}
+ .info :hover{ 
+    background: lightgray;
+    border-radius: 9999px;
+ 
+   
+}
+.info-in{
+    display: flex;
+    align-items: center;
+}
