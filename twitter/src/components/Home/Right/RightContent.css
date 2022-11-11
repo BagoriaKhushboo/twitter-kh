@@ -1,7 +1,8 @@
 .rightcontent{
     border: 1px solid rgb(239, 243, 244);
-    padding: 16px;
+    padding: 16px 40px 16px 16px;
     border-radius: 17px;
+    margin: 10px 100px 0 45px;
 
 }
 .rightcontent h3{
@@ -67,8 +68,8 @@
 .extra-links{
     font-size: 13px;
     font-weight: 400;
-    margin-top: 16px;
-    padding-left: 16px;
+    margin: 16px 100px 0 45px;
+    padding: 0 40px 0 16px;
     font-family: sans-serif;
 }
 .extra-links a{
