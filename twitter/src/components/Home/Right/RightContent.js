@@ -1,8 +1,15 @@
 import './RightContent.css';
+import Signup from './Signup/Signup';
+import {useState} from 'react';
 function RightContent(){
+
+    const [modalVisible, setModalVisible] = useState(false);
+    const open=()=>{
+     setModalVisible(true);
+    }
     return (
 
-    <div className="right">
+    <div className="right" >
         <div className="rightcontent">
             <h3>New to Twitter?</h3>
             <p>Sign up now to get your own personalized timeline!</p>
@@ -22,13 +29,15 @@ function RightContent(){
                 <div className="social">
                     <a href="">
                     <i className="bi bi-apple social-m"></i>
-                            <span className="fc">Sign up with Apple</span>
-                        </a>
+                    <span className="fc">Sign up with Apple</span>
+                    </a>
                 </div>
                 <div className="social">
-                    <a href="">
-                            <span className="fc">Sign up phone or email</span>
-                        </a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2" onClick={open}><span   className="fc" >Sign up phone or email</span></a> 
+                <div className="modal fade" id="exampleModal2" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <Signup/>    
+                </div>
+                            
                 </div>
 
             </div>
@@ -39,6 +48,7 @@ function RightContent(){
         <div className="extra-links">
             <a href="">Terms of Service </a><a href=""> Privacy Policy </a><a href="">Cookie Use</a><a href=""> Accessibility</a><a href=""> Ads info</a><a href=""> More...</a><span>© 2022 Twitter, Inc.</span>
         </div>
+       
     </div>
 
 

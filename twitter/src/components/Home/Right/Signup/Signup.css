@@ -1,0 +1,26 @@
+
+.signUpForm{
+    text-align: center;
+}
+.modal-header {
+justify-content: center !important;
+}
+.modal-header h1{
+    font-size: 30px !important ;
+    font-weight: 800;
+}
+.signUpForm input{
+    border: 1px solid lightblue;
+    border-radius: 19px;
+    padding: 7px;
+    width: 80%;
+    margin-bottom: 13px;
+}
+.modal-footer{
+    justify-content: center;
+    padding: 32px 0;
+}
+.btnwidth{
+    width: 38% !important;
+    
+}

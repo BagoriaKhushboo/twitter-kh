@@ -1,5 +1,11 @@
 import './LeftContent.css';
-function LeftContent(){
+import NewTweet from '../NewTweet/NewTweet';
+function LeftContent(props){
+  function NewTweetRecived(newTweet){
+    console.log("I am leftside logo component");
+    console.log(newTweet);
+    props.notifynewtweet(newTweet);
+  }
     return (
 <div className="row">
     <div className="col-6 offset-3">
@@ -24,6 +30,22 @@ function LeftContent(){
                 </div>
             </a>
     </div>
+
+    <div className="tweet">
+    <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Tweet
+        </button>
+
+      <div
+        className="modal fade"
+        id="exampleModal"
+        tabIndex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <NewTweet notifynewtweet={ NewTweetRecived}/>
+      </div>
+    </div>
+    
 </div>
 </div>
 </div>

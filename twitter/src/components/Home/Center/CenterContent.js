@@ -1,6 +1,7 @@
 import Trend from '../Trends/Trend';
 import './CenterContent.css';
 import { useState , useEffect}  from 'react'
+import Post from '../Post/Post';
 
 function CenterContent(){
   
@@ -8,7 +9,7 @@ function CenterContent(){
     // Read data from json file/api/os/external resources.
     // fetch function takes some to communicate with external resources.
 const[ trendData, setTrendData]=useState([]);
-const[click , setClick]=useState(0);
+// const[click , setClick]=useState(0);
  // 1. read data from trend.json file.
  useEffect(()=>{
   fetch("trend.json")
@@ -22,15 +23,32 @@ const[click , setClick]=useState(0);
      .then(convertedData=> {
        // trendData = convertedData;
        setTrendData(convertedData);
-       console.log(trendData.length); // 6
+   
      });
- },[click])
-
+ },[])//inside []--> we use [click] because we define click variable
+// ******************************
+const[dataPost , setPost]=useState([]);
+useEffect(()=>{
+  fetch("post.json")
+  .then(getresp=>{
+    console.log(getresp);
+    return getresp.json();
+  })
+  .then(convertres=>{
+    setPost(convertres);
+  });
+},[])
+// **********************************
+// const[DoTweet, setDotweet]=useState("newTweet");
+// console.log('center page');
+// console.log(DoTweet);
+// *********************************
     return (
         <div>
-          <h1>{trendData.length} </h1> 
+         
 <div className="CenterContentIn">
-<button onClick={()=>{setClick(click+1)}}>Click</button>
+{/* <button onClick={()=>{setClick(click+1)}}>Click</button> */}
+{/* <button onClick={()=>{setClick(click2+1)}}>Click</button> */}
     <div className="searchBox">
     <svg width="20px" height="20" viewBox="0 0 24 24" aria-hidden="true" className="r-14j79pv r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-4wgw6l r-f727ji r-bnwqim r-1plcrui r-lrvibr"><g><path d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z"></path></g></svg>
     <input placeholder="Search Twitter" type="text" />
@@ -71,6 +89,12 @@ const[click , setClick]=useState(0);
           trendData.map(data=> 
           <Trend content={data}/>)
         }
+        {
+
+          dataPost.map(getpost=> 
+             <Post postContent={getpost} />)
+        }
+      
       
 </div>
     );

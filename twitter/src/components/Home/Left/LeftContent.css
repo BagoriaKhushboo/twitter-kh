@@ -52,3 +52,8 @@
     display: flex;
     align-items: center;
 }
+.tweet button{
+    border-radius: 24px;
+    width: 60%;
+    background-color: rgb(29, 155, 240);
+}
