@@ -5,10 +5,12 @@ function Signup(){
     const[email ,setEmail]=useState("");
     const[pwd ,setPassword]=useState("");
     const[cpwd ,setCpassword]=useState("");
-    const changeOnName=(event)=>{
-setUserName(event.target.value);
+   
 
-    }
+    const changeOnName=(event)=>{
+     setUserName(event.target.value);
+
+     }
     const changeOnEmail=(event)=>{
         setEmail(event.target.value); 
     }
@@ -18,11 +20,13 @@ setUserName(event.target.value);
     const changeOnCpwd=(event)=>{
         setCpassword(event.target.value);
     }
+   
     function submit(){
         console.log(user);
         console.log(email);
         console.log(pwd);
         console.log(cpwd);
+        
     }
     return(
         <>
@@ -34,10 +38,11 @@ setUserName(event.target.value);
       </div>
       <div className="modal-body">
       <div className="signUpForm" >
-    <form action="">
+      <form action="">
         <div className="username">
         <input type="text" value={user} onChange={changeOnName} placeholder="Username" />
         </div>
+       
         <div className="email">
         <input type="email" value={email} onChange={changeOnEmail} placeholder="Email Address" />
         </div>
@@ -47,9 +52,9 @@ setUserName(event.target.value);
         <div className="confirmpwd">
         <input type="password" value={cpwd} onChange={changeOnCpwd} placeholder="Confirm Password" />
         </div>
-    </form>
+      </form>
   
-</div>
+   </div>
       </div>
       <div className="modal-footer">
         <button type="button" className="btn btn-secondary btnwidth" data-bs-dismiss="modal">Close</button>

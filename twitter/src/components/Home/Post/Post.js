@@ -1,13 +1,20 @@
+import { useEffect, useState } from 'react';
 import './Post.css';
 function Post(props){
-    const pcontent=props.postContent;
+
+    const [pcontent, setContent]=useState("");
+    useEffect(()=>{
+      console.log("new data")
+      setContent(props.postContent)
+    }, [props.postContent])
+
     return(<>
     <div className="post">
     <div className="post-in" >
     <img src={pcontent.posticon} />
     <div className="post-content">
     <a href="" className='first-heading'>{pcontent.fheading}</a><a href="" className='second-heading'>{pcontent.sheading}</a><a href="" className='second-heading'>{pcontent.time}</a>
-    <p className="p-text">{pcontent.posttext}</p>
+    <p className="p-text">{pcontent}</p>
     </div>
     </div>
     <div className="tag-links">

@@ -17,7 +17,7 @@ justify-content: center !important;
     margin-bottom: 13px;
 }
 .modal-footer{
-    justify-content: center;
+    justify-content: center !important;
     padding: 32px 0;
 }
 .btnwidth{
