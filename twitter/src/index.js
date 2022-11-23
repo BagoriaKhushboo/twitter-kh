@@ -4,11 +4,18 @@ import './index.css';
 import App from './App';
 import Home from './pages/Home/Home';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import Profile from './pages/Profile/Profile';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Home />
+   <BrowserRouter>
+   <Routes>
+    <Route path='/' element={<Home/>}> </Route>
+    <Route path='/profile' element={<Profile/>}></Route>
+   </Routes>
+   </BrowserRouter>
   
   </React.StrictMode>
 );

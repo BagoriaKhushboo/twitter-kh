@@ -11,7 +11,16 @@ function LeftContent(props){
     <div className="col-6 offset-3">
         <div className="content-in">
     <div className="logo">
-      <a href=""><i className="bi bi-twitter tw"></i></a>
+      <a href="/"><i className="bi bi-twitter tw"></i></a>
+    </div>
+    <div className="info">
+      <a href="/profile">
+        <div className="info-in">
+        <i class="bi bi-person-fill ex-icon"></i>
+         <span className="fwex-span">Profile</span>
+        </div>
+      </a>
+      
     </div>
     <div className="info">
       <a href="">
